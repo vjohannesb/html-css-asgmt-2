@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+
+// Fonts
+$font-primary: "Roboto", sans-serif;
+$font-secondary: "Roboto Slab", serif;
+
+// Colors
+$charcoal:      #2E4052FF;
+$ash-gray:      #CAD2C5FF;
+$dark-purple:   #412234FF;
+$fire-opal:     #E5625EFF;
+$dark-sienna:   #38040EFF;
+
+// Breakpoints
+$bp-medium: 768px;
+$bp-medium-max-width: 720px;
+$bp-large: 992px;
+$bp-large-max-width: 960px;
+$bp-xlarge: 1200px;
+$bp-xlarge-max-width: 1140px;
+$bp-xxlarge: 1400px;
+$bp-xxlarge-max-width: 1320px;
+@import "./breakpoints";
+

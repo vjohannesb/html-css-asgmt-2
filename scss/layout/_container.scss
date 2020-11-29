@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @include medium {
+        max-width: $bp-medium-max-width;
+    }
+
+    @include large {
+        max-width: $bp-large-max-width
+    }
+
+    @include xlarge {
+        max-width: $bp-xlarge-max-width
+    }
+
+    @include xxlarge {
+        max-width: $bp-xxlarge-max-width
+    }
+}
+
+#main {
+    margin-top: 1rem;
+}
