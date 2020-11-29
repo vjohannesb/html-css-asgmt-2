@@ -1,10 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap");
 .container {
   width: 100%;
+  min-width: 300px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -31,14 +42,97 @@
   }
 }
 
-#main {
-  margin-top: 1rem;
+form {
+  margin: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
 }
 
-form input {
+@media (min-width: 992px) {
+  form {
+    width: 75%;
+  }
+}
+
+form label {
+  text-transform: uppercase;
+  color: gray;
+}
+
+form input[type=text], form input[type=email], form input[type=password] {
   width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
   font-size: 1rem;
-  padding: 0.25rem;
+  font-family: "Source Sans", sans-serif;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid gray;
+  transition-property: border-bottom;
+  transition-duration: 0.25s;
+}
+
+form input[type=text]:focus, form input[type=email]:focus, form input[type=password]:focus {
+  border-bottom: 2px solid #ec5151;
+}
+
+form h2 {
+  margin-bottom: 0rem;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  justify-self: center;
+}
+
+@media (min-width: 768px) {
+  form h2 {
+    justify-self: start;
+  }
+}
+
+form .checkbox-group {
+  grid-column: 1 / -1;
+  font-size: 0.75rem;
+  align-items: center;
+}
+
+form .checkbox-group input[type=checkbox] {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  form .checkbox-group input[type=checkbox] {
+    width: 13px;
+    height: 13px;
+  }
+}
+
+form .checkbox-group .checkbox-subgroup {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+form .checkbox-group .checkbox-subgroup label {
+  margin-left: 0.5rem;
+}
+
+footer {
+  margin-top: 2rem;
+  text-transform: uppercase;
+  color: gray;
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 * {
@@ -50,6 +144,6 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  font-family: "Roboto", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   margin: 0;
 }

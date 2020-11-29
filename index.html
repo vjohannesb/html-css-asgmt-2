@@ -14,34 +14,102 @@
 </head>
 
 <body>
-    <div id="main" class="container">
+    <div class="container">
         <form id="reg-form">
-            <label for="fnamn">Förnamn</label>
-            <input type="text" id="fnamn" name="fnamn">
 
-            <label for="enamn">Efternamn</label>
-            <input type="text" id="enamn" name="enamn">
+            <!-- Leveransadress -->
+            <h2>Leveransadress</h2>
+            <div class="input-group">
+                <label for="fnamn">Förnamn</label>
+                <input type="text" id="fnamn" name="fnamn">
+            </div>
 
-            <label for="adress">Adress</label>
-            <input type="text" id="adress" name="adress">
+            <div class="input-group">
+                <label for="enamn">Efternamn</label>
+                <input type="text" id="enamn" name="enamn">
+            </div>
 
-            <label for="postnr">Postnummer</label>
-            <input type="text" id="postnr" name="postnr">
+            <div class="input-group">
+                <label for="adress">Adress</label>
+                <input type="text" id="adress" name="adress">
+            </div>
 
-            <label for="ort">Postort</label>
-            <input type="text" id="ort" name="ort">
+            <div class="input-group">
+                <label for="postnr">Postnummer</label>
+                <input type="text" id="postnr" name="postnr">
+            </div>
 
-            <label for="ort">Postort</label>
-            <input type="text" id="ort" name="ort">
+            <div class="input-group">
+                <label for="ort">Postort</label>
+                <input type="text" id="ort" name="ort">
+            </div>
 
-            <label for="password">Lösenord</label>
-            <input type="password" id="password" name="password">
 
-            <label for="confirm-password">Bekräfta lösenord</label>
-            <input type="password" id="confirm-password" name="confirm-password">
+            <!-- Faktureringsadress -->
+            <h2>Faktureringsadress</h2>
+            <div class="input-group">
+                <label for="fnamn">Förnamn</label>
+                <input type="text" id="fnamn" name="fnamn">
+            </div>
+
+            <div class="input-group">
+                <label for="enamn">Efternamn</label>
+                <input type="text" id="enamn" name="enamn">
+            </div>
+
+            <div class="input-group">
+                <label for="adress">Adress</label>
+                <input type="text" id="adress" name="adress">
+            </div>
+
+            <div class="input-group">
+                <label for="postnr">Postnummer</label>
+                <input type="text" id="postnr" name="postnr">
+            </div>
+
+            <div class="input-group">
+                <label for="ort">Postort</label>
+                <input type="text" id="ort" name="ort">
+            </div>
+
+            <!-- Inloggning -->
+            <h2>Inloggningsuppgifter</h2>
+            <div class="input-group">
+                <label for="ort">E-post</label>
+                <input type="email" id="epost" name="epost">
+            </div>
+
+            <div class="input-group">
+                <label for="password">Lösenord</label>
+                <input type="password" id="password" name="password">
+            </div>
+
+            <div class="input-group">
+                <label for="confirm-password">Bekräfta lösenord</label>
+                <input type="password" id="confirm-password" name="confirm-password">
+            </div>
+
+            <div class="checkbox-group">
+                <div class="checkbox-subgroup">
+                    <input type="checkbox" id="gdpr" name="gdpr">
+                    <label for="gdpr">Jag godkänner hemsidans användarvillkor och GDPR</label>
+                </div>
+
+                <div class="checkbox-subgroup">
+                    <input type="checkbox" id="email-list" name="email-list">
+                    <label for="email-list">Jag godkänner nyhets- och reklamutskick (enligt GDPR)</label>
+                </div>
+            </div>
         </form>
-    </div>
 
+        <footer>
+            <div class="container">
+                <p>
+                    &copy; Johannes Bergendahl
+                </p>
+            </div>
+        </footer>
+    </div>
 
 </body>
 

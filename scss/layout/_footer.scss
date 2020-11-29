@@ -1,0 +1,14 @@
+footer {
+    margin-top: 2rem;
+    text-transform: uppercase;
+    color: gray;
+
+    font-size: 1rem;
+    font-family: $font-primary;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
