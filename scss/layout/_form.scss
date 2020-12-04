@@ -1,76 +1,91 @@
 form {
-    margin: auto;
     width: 100%;
 
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
-
-    @include large {
-        width: 75%;
+    h2 {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        border-bottom: 2px solid rgba(255, 129, 129, 0.5);
     }
 
     label {
         text-transform: uppercase;
-        color: gray;
+        color: rgb(95, 95, 95);
+        margin-bottom: 0;
     }
 
+    // ! TEXT/EMAIL/PW
     input[type=text], input[type=email], input[type=password] {
         width: 100%;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
         
+        font-weight: bold;
         font-size: 1rem;
         font-family: $font-secondary;
+        color: rgb(60, 60, 60);
         
         outline: none;
         border: none;
         border-bottom: 2px solid gray;
-        transition-property: border-bottom;
+        transition-property: border-bottom 0.25s, color 0.25s;
         transition-duration: 0.25s;
 
         &:focus {
             border-bottom: 2px solid rgb(236, 81, 81);
+            color: black;
         }
     }
 
-    h2 {
-        margin-bottom: 0rem;
-        grid-column-start: 1;
-        grid-column-end: -1;
-        justify-self: center;
+    input[type=text]{
+        text-transform: capitalize;
+    }
 
+    // ! CHECKBOXES
+    .checkboxes {
+        word-wrap: break-word;
+        text-overflow: clip;
+        flex-wrap: wrap;
         @include medium {
-            justify-self: start;
+            text-align: left;
         }
-    }
-
-    .checkbox-group {
-        grid-column: 1 / -1;
-        font-size: 0.75rem;
-        align-items: center;
 
         input[type=checkbox] {
-            width:30px;
-            height:30px;
+            width: 30px;
+            height: 30px;
             cursor: pointer;
-
-
+    
             @include large {
                 width: 13px;
                 height: 13px;
             }
         }
 
-        .checkbox-subgroup {
-            margin-top: 1rem;
-            display: flex;
-            align-items: center;
+        label {
+            font-size: 1rem;
+            color: black;
+            font-weight: bold;
+            display: inline;
+        }
+    }
 
-            label {
-                margin-left: 0.5rem;
-            }
+    // ! SUBMIT-KNAPP
+    input[type=submit] {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        padding-top: 1rem;
+        padding-bottom: 0.75rem;
+        transition-duration: 0.2s;
+        border-radius: 5px;
+        border: 2px solid transparent;
+        background: $charcoal;
+        color: #fff;
+
+        outline: none;
+
+        &:hover, &:focus {
+            border: 2px solid rgba(46, 64, 81, .75);
+            background: #fff;
+            color: $charcoal;
         }
     }
 }

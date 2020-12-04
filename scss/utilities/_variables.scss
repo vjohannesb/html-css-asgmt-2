@@ -1,22 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Source+Sans+Pro:wght@400;700&family=Roboto&display=swap');
+
 // Fonts
 $font-primary: "Josefin Sans", sans-serif;
 $font-secondary: "Source Sans", sans-serif;
-$font-backup: "Roboto Slab", serif;
+$font-backup: "Roboto", sans-serif;
 
 // Colors
 $charcoal:      #2E4052FF;
-$ash-gray:      #CAD2C5FF;
-$dark-purple:   #412234FF;
-$fire-opal:     #E5625EFF;
-$dark-sienna:   #38040EFF;
-
-$apricot: #ffcdb2ff;
-$melon: #ffb4a2ff;
-$pastel-pink: #e5989bff;
-$english-lavender: #b5838dff;
-$old-lavender: #6d6875ff;
 
 // Breakpoints
 $bp-small: 576px;

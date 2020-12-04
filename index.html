@@ -7,100 +7,151 @@
     <meta name="description" content="">
 
     <script src="https://kit.fontawesome.com/043e51ac62.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <title></title>
+    <title>Logga in eller registrera</title>
 </head>
 
 <body>
     <div class="container">
-        <form id="reg-form">
 
-            <!-- Leveransadress -->
-            <h2>Leveransadress</h2>
-            <div class="input-group">
-                <label for="fnamn">Förnamn</label>
-                <input type="text" id="fnamn" name="fnamn">
-            </div>
-
-            <div class="input-group">
-                <label for="enamn">Efternamn</label>
-                <input type="text" id="enamn" name="enamn">
-            </div>
-
-            <div class="input-group">
-                <label for="adress">Adress</label>
-                <input type="text" id="adress" name="adress">
-            </div>
-
-            <div class="input-group">
-                <label for="postnr">Postnummer</label>
-                <input type="text" id="postnr" name="postnr">
-            </div>
-
-            <div class="input-group">
-                <label for="ort">Postort</label>
-                <input type="text" id="ort" name="ort">
-            </div>
-
-
-            <!-- Faktureringsadress -->
-            <h2>Faktureringsadress</h2>
-            <div class="input-group">
-                <label for="fnamn">Förnamn</label>
-                <input type="text" id="fnamn" name="fnamn">
-            </div>
-
-            <div class="input-group">
-                <label for="enamn">Efternamn</label>
-                <input type="text" id="enamn" name="enamn">
-            </div>
-
-            <div class="input-group">
-                <label for="adress">Adress</label>
-                <input type="text" id="adress" name="adress">
-            </div>
-
-            <div class="input-group">
-                <label for="postnr">Postnummer</label>
-                <input type="text" id="postnr" name="postnr">
-            </div>
-
-            <div class="input-group">
-                <label for="ort">Postort</label>
-                <input type="text" id="ort" name="ort">
-            </div>
+        <div class="row justify-content-around">
 
             <!-- Inloggning -->
-            <h2>Inloggningsuppgifter</h2>
-            <div class="input-group">
-                <label for="ort">E-post</label>
-                <input type="email" id="epost" name="epost">
-            </div>
+            <div class="col-xs-12 col-md-5 col-lg-4 col-xl-4">
+                <h1>Logga in</h1>
+                <form action="" id="login-form">
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="email">E-postadress</label>
+                            <input type="email" id="email" name="email">
+                        </div>
 
-            <div class="input-group">
-                <label for="password">Lösenord</label>
-                <input type="password" id="password" name="password">
-            </div>
+                        <div class="col-12">
+                            <label for="password">Lösenord</label>
+                            <input type="password" id="password" name="password">
+                        </div>
+                    </div>
 
-            <div class="input-group">
-                <label for="confirm-password">Bekräfta lösenord</label>
-                <input type="password" id="confirm-password" name="confirm-password">
-            </div>
+                    <div class="row justify-content-center">
+                        <input type="submit" id="btnSubmit" value="Logga in" class="col-10">
+                    </div>
 
-            <div class="checkbox-group">
-                <div class="checkbox-subgroup">
-                    <input type="checkbox" id="gdpr" name="gdpr">
-                    <label for="gdpr">Jag godkänner hemsidans användarvillkor och GDPR</label>
-                </div>
-
-                <div class="checkbox-subgroup">
-                    <input type="checkbox" id="email-list" name="email-list">
-                    <label for="email-list">Jag godkänner nyhets- och reklamutskick (enligt GDPR)</label>
-                </div>
+                </form>
             </div>
-        </form>
+            <!-- Registreringsformulär -->
+            <div class="col-xs-12 col-md-6 col-lg-7 col-xl-7">
+                <h1>Ny kund</h1>
+                <form id="reg-form">
+
+                    <!-- Leveransadress -->
+                    <h2>Leveransadress</h2>
+
+                    <div class="row justify-content-around">
+                        <div class="col-sm-6 col-md-12 col-lg-6">
+                            <label for="fnamn">Förnamn</label>
+                            <input type="text" id="fnamn" name="fnamn" autocomplete="given-name">
+                        </div>
+
+                        <div class="col-sm-6 col-md-12 col-lg-6">
+                            <label for="enamn">Efternamn</label>
+                            <input type="text" id="enamn" name="enamn" autocomplete="family-name">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="adress">Adress</label>
+                            <input type="text" id="adress" name="adress" autocomplete="street-address">
+                        </div>
+
+                        <div class="col-sm-6 col-xl-6">
+                            <label for="postnr">Postnummer</label>
+                            <input type="text" id="postnr" name="postnr" autocomplete="postal-code">
+                        </div>
+
+                        <div class="col-sm-6 col-xl-6">
+                            <label for="ort">Postort</label>
+                            <input type="text" id="ort" name="City" autocomplete="address-level1">
+                        </div>
+                    </div>
+
+                    <!-- Faktureringsadress -->
+                    <h2>Faktureringsadress</h2>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-12 col-lg-6">
+                            <label for="f-fnamn">Förnamn</label>
+                            <input type="text" id="f-fnamn" name="fnamn" autocomplete="given-name">
+                        </div>
+
+                        <div class="col-sm-6 col-md-12 col-lg-6">
+                            <label for="f-enamn">Efternamn</label>
+                            <input type="text" id="f-enamn" name="enamn" autocomplete="family-name">
+                        </div>
+
+                        <div class="col-sm-12 col-lg-6">
+                            <label for="f-adress">Adress</label>
+                            <input type="text" id="f-adress" name="adress" autocomplete="street-address">
+                        </div>
+
+                        <div class="col-sm-6 col-lg-3">
+                            <label for="f-postnr">Postnummer</label>
+                            <input type="text" id="f-postnr" name="postnr" autocomplete="postal-code">
+                        </div>
+
+                        <div class="col-sm-6 col-lg-3">
+                            <label for="f-ort">Postort</label>
+                            <input type="text" id="f-ort" name="City" autocomplete="address-level1">
+                        </div>
+                    </div>
+
+                    <!-- Inloggningsuppgifter -->
+                    <h2>Inloggningsuppgifter</h2>
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="reg-email">E-post</label>
+                            <input type="email" id="reg-email" name="reg-email">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="reg-password">Lösenord</label>
+                            <input type="password" id="reg-password" name="reg-password" autocomplete="new-password">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="confirm-password">Bekräfta lösenord</label>
+                            <input type="password" id="confirm-password" name="confirm-password"
+                                autocomplete="new-password">
+                        </div>
+                    </div>
+
+                    <div class="row checkboxes align-items-center">
+                        <div class="col-1">
+                            <input type="checkbox" id="gdpr" name="gdpr">
+                        </div>
+                        <div class="col-11">
+                            <label for="gdpr">Jag godkänner hemsidans <a href="##"> användarvillkor
+                                </a> och <a href="##">GDPR</a></label>
+                        </div>
+                    </div>
+
+                    <div class="row checkboxes align-items-center">
+                        <div class="col-1">
+                            <input type="checkbox" id="email-list" name="email-list">
+                        </div>
+                        <div class="col-11">
+                            <label for="email-list">Jag godkänner nyhets- och reklamutskick (enligt GDPR)</label>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <input type="submit" id="btnSubmit" value="Registrera" class="col-10">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
 
         <footer>
             <div class="container">
@@ -110,6 +161,10 @@
             </div>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
 
 </body>
 
