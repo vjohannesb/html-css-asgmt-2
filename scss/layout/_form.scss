@@ -4,12 +4,12 @@ form {
     h2 {
         margin-top: 2rem;
         margin-bottom: 2rem;
-        border-bottom: 2px solid rgba(255, 129, 129, 0.5);
+        border-bottom: 2px solid $light-pink;
     }
 
     label {
         text-transform: uppercase;
-        color: rgb(95, 95, 95);
+        color: $light-gray;
         margin-bottom: 0;
     }
 
@@ -21,7 +21,7 @@ form {
         font-weight: bold;
         font-size: 1rem;
         font-family: $font-secondary;
-        color: rgb(77, 77, 77);
+        color: $dark-gray;
         
         outline: none;
         border: none;
@@ -30,7 +30,7 @@ form {
         transition-duration: 0.25s;
 
         &:focus {
-            border-bottom: 2px solid rgb(236, 81, 81);
+            border-bottom: 2px solid $sharp-pink;
             color: black;
         }
     }

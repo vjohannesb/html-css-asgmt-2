@@ -17,12 +17,12 @@ form {
 form h2 {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  border-bottom: 2px solid rgba(255, 129, 129, 0.5);
+  border-bottom: 2px solid #ff818180;
 }
 
 form label {
   text-transform: uppercase;
-  color: #5f5f5f;
+  color: #5f5f5fff;
   margin-bottom: 0;
 }
 
@@ -32,7 +32,7 @@ form input[type=text], form input[type=email], form input[type=password] {
   font-weight: bold;
   font-size: 1rem;
   font-family: "Source Sans", sans-serif;
-  color: #4d4d4d;
+  color: #4d4d4dff;
   outline: none;
   border: none;
   border-bottom: 2px solid gray;
@@ -41,7 +41,7 @@ form input[type=text], form input[type=email], form input[type=password] {
 }
 
 form input[type=text]:focus, form input[type=email]:focus, form input[type=password]:focus {
-  border-bottom: 2px solid #ec5151;
+  border-bottom: 2px solid #ec5151ff;
   color: black;
 }
 
@@ -90,7 +90,7 @@ form input[type=submit] {
   transition-duration: 0.2s;
   border-radius: 5px;
   border: 2px solid transparent;
-  background: #2E4052FF;
+  background: #2e4052ff;
   color: #fff;
   outline: none;
 }
@@ -98,7 +98,7 @@ form input[type=submit] {
 form input[type=submit]:hover, form input[type=submit]:focus {
   border: 2px solid rgba(46, 64, 81, 0.75);
   background: #fff;
-  color: #2E4052FF;
+  color: #2e4052ff;
 }
 
 footer {
